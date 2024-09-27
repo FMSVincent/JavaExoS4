@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Encapsulate field &apos;fr.fms.entities.Capitale.monuments&apos; in &apos;fr.fms.entities.Capitale&apos;&#x0D;&#x0A;- Original project: &apos;PooEx1Object&apos;&#x0D;&#x0A;- Original element: &apos;fr.fms.entities.Capitale.monuments&apos;&#x0D;&#x0A;- Getter method name: &apos;getMonuments&apos;&#x0D;&#x0A;- Setter method name: &apos;setMonuments&apos;&#x0D;&#x0A;- Field visibility: &apos;public&apos;&#x0D;&#x0A;- Use getter and setter methods in declaring type" comments="false" declaring="true" description="Encapsulate field &apos;monuments, ...&apos;" flags="589830" getter="getMonuments" id="org.eclipse.jdt.ui.self.encapsulate" input="/src&lt;fr.fms.entities{Capitale.java[Capitale^monuments" insertion="0" setter="setMonuments" stamp="1727423713804" version="1.0" visibility="1"/>
+</session>

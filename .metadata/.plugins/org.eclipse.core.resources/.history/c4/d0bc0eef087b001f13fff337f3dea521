@@ -1,0 +1,37 @@
+package fr.fms.pooexo;
+
+public class TestCity {
+
+
+
+	
+	public static void main(String[] args) {
+		
+		// 1.1
+		
+		City toulouse = new City ("Toulouse", "France", 101100110);
+		City paris = new City ("Paris", "France", 101110010);
+		City strasbourg = new City ("Strasbourg", "France", 101100001);
+		City lyon = new City ("Nice", "France", 101101110);
+		City marseille = new City ("Nice", "France", 101100011);
+		City avignon = new City ("Nice", "France", 101100101);
+		
+		// 1.1 if public properties display
+		
+//		System.out.println(toulouse.name, toulouse.country, toulouse.totalResident);
+//		System.out.println(paris.toString());
+//		System.out.println(strasbourg.toString());
+//		System.out.println(lyon.toString());
+//		System.out.println(marseille.toString());
+//		System.out.println(avignon.toString());
+//		
+//		add 20000k residents to toulouse
+//		toulouse.totalResident += 20000;
+//		System.out.println(toulouse.getName()+ " " + toulouse.getCountry() + " " + toulouse.getTotalResident());
+		
+		// 1.2 display with getters 
+		System.out.println(toulouse.getName()+ " " + toulouse.getCountry() + " " + toulouse.getTotalResident());
+		
+	}
+
+}

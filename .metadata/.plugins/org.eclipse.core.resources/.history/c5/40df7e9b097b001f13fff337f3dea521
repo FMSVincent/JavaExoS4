@@ -1,0 +1,70 @@
+package fr.fms.pooexo;
+
+// 1.2 setup getters ans setters and properties change to private
+
+import java.util.Scanner;
+import java.util.concurrent.ExecutionException;
+
+import javax.management.RuntimeErrorException;
+
+public class City {
+	
+	private Scanner sc = new Scanner(System.in);
+	private String name;
+	private String country;
+	public int totalResident;
+	
+/**
+	 * @param name
+	 * @param country
+	 * @param totalResident
+	 */
+	public City(String name, String country, int totalResident) {
+		setCountry(country);
+		setName(name);
+		setTotalResident(totalResident);
+	}
+	
+	public City(String name, int totalResident) {
+		
+	}
+	
+	@Override
+	public String toString() {
+		return "City [name=" + name + ", country=" + country + ", totalResident=" + totalResident + "]"; 
+	}
+
+
+	protected String getName() {
+		return name;
+	}
+
+
+	protected void setName(String name) {
+		this.name = name;
+	}
+
+
+	protected String getCountry() {
+		return country;
+	}
+
+
+	protected void setCountry(String country) {
+		this.country = country;
+	}
+
+
+	protected int getTotalResident() {
+		return totalResident;
+	}
+
+
+	protected void setTotalResident(int totalResident) {
+		if(totalResident <= 0)
+			throw new RuntimeErrorException("ne peut etre inferieur ou egal a 0 !");
+		this.totalResident = totalResident;
+
+	}
+	
+}

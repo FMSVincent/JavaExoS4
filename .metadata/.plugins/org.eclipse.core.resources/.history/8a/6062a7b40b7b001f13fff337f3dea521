@@ -1,0 +1,78 @@
+package fr.fms.pooexo;
+
+// 1.2 setup getters ans setters and properties change to private
+
+import java.util.Scanner;
+import java.util.concurrent.ExecutionException;
+
+public class City {
+	
+	private Scanner sc = new Scanner(System.in);
+	private String name;
+	private String country;
+	private int totalResident;
+	
+/**
+	 * @param name
+	 * @param country
+	 * @param totalResident
+	 */
+	public City(String name, String country, int totalResident) {
+		setCountry(country);
+		setName(name);
+		setTotalResident(totalResident);
+	}
+	
+
+	/**
+	 * reduce total Residents 1.2
+	 * @param int This will serve to reduce the number of residents
+	 */
+	public void subResidents() {
+		System.out.println("de combien souhaitez-vous reduire le nombre d'habitants ?");
+		while(!sc.hasNextInt()) sc.next();
+		int inputUser = sc.nextInt();
+		if(inputUser < totalResident || inputUser < 0)
+			throw new RuntimeException("le nombre total de residents ne peut etre  inferieur ou egal a 0");
+		totalResident -= inputUser;
+	}
+	
+	@Override
+	public String toString() {
+		return "City [name=" + name + ", country=" + country + ", totalResident=" + totalResident + "]"; 
+	}
+
+
+	protected String getName() {
+		return name;
+	}
+
+
+	protected void setName(String name) {
+		this.name = name;
+	}
+
+
+	protected String getCountry() {
+		return country;
+	}
+
+
+	protected void setCountry(String country) {
+		this.country = country;
+	}
+
+
+	protected int getTotalResident() {
+		return totalResident;
+	}
+
+
+	protected void setTotalResident(int totalResident) {
+		if(totalResident <= 0)
+			throw new RuntimeException("ne peut etre inferieur ou egal a 0 !");
+		this.totalResident = totalResident;
+
+	}
+	
+}

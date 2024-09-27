@@ -1,0 +1,22 @@
+package fr.fms.pooexo;
+
+public class TestPerson {
+
+	public static void main(String[] args) {
+//		// 1.9
+//		Person manu = new Person("Macron", "Manu", 43, "Elysee a paris", new City("Amien", "France"));
+//		Person poutine = new Person("Poutine", "vladimir", 68);
+//
+//		System.out.println(manu);
+//		System.out.println(poutine);
+		
+		// 2.0
+		Person manu = new Person("Macron", "Manu", 43, "Elysee a paris", new City("Amien", "France"));
+		Person sarko = new Person("Sarkozy", "Nicolas", 66, "Paris", new City("Paris", "France", 2000000));
+		Person manu = new Person("Macron", "Manu", 43, "Elysee a paris", new City("Amien", "France"));
+		Person manu = new Person("Macron", "Manu", 43, "Elysee a paris", new City("Amien", "France"));
+		Person manu = new Person("Macron", "Manu", 43, "Elysee a paris", new City("Amien", "France"));
+		Person manu = new Person("Macron", "Manu", 43, "Elysee a paris", new City("Amien", "France"));
+	}
+
+}

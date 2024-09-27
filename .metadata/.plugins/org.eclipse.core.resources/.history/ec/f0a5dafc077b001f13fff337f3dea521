@@ -1,0 +1,67 @@
+package fr.fms.pooexo;
+
+import java.util.Scanner;
+
+public class City {
+	
+	private Scanner sc = new Scanner(System.in);
+	private String name;
+	private String country;
+	private int totalResident;
+	
+/**
+	 * @param name
+	 * @param country
+	 * @param totalResident
+	 */
+	public City(String name, String country, int totalResident) {
+		setCountry(country);
+		setName(name);
+		setTotalResident(totalResident);
+	}
+	
+	public City(String name, int totalResident) {
+		
+	}
+	// 1.1 add 20k
+	public void add20k() {
+		totalResident += 20000;
+	}
+	
+	@Override
+	public String toString() {
+		return "City [name=" + name + ", country=" + country + ", totalResident=" + totalResident + "]"; 
+	}
+
+
+	protected String getName() {
+		return name;
+	}
+
+
+	protected void setName(String name) {
+		this.name = name;
+	}
+
+
+	protected String getCountry() {
+		return country;
+	}
+
+
+	protected void setCountry(String country) {
+		this.country = country;
+	}
+
+
+	protected int getTotalResident() {
+		return totalResident;
+	}
+
+
+	protected void setTotalResident(int totalResident) {
+		this.totalResident = totalResident;
+
+	}
+	
+}

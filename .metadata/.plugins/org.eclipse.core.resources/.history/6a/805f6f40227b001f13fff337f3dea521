@@ -1,0 +1,87 @@
+package fr.fms.pooexo;
+
+/**
+ * Exercice 1.8 : Crée la classe Person avec pour attributs nom, prénom, âge, adresse. Puis 
+tester la dans une classe TestPerson en créant plusieurs instances puis afficher les afin 
+d’obtenir le résultat suivant 
+
+ Exercice 1.9 : Ajouter à votre classe Person un attribut « Ville de Naissance » qui est un 
+objet de type City de sorte d’obtenir ce qui suit :
+ */
+
+
+
+
+public class Person {
+	
+	// 1.9
+	private  City BornCity;
+	private  String lastname;
+	private  String firstname;
+	private  int age;
+	private  String address;
+	/**
+	 * @param address 
+	 * @param age 
+	 * @param firstname 
+	 * @param lastname 
+	 * @param city 
+	 * 
+	 */
+	public Person(String lastname, String firstname, int age, String address, City BornCity) {
+		setLastname(lastname);
+		setFirstname(firstname);
+		setAge(age);
+		setAddress(address);
+		setBornCity(BornCity);
+	}
+	
+	public Person(String lastname, String firstname, int age) {
+		setLastname(lastname);
+		setAge(age);
+	}
+
+	@Override
+	public String toString() {
+		return "Person [lastname=" + lastname + ", " + "firstname=" + firstname + ", " +  " age=" + age +  ", " + "address=" + address + "]"
+				+ " Borncity " + "[name=" + BornCity.getName() + ", " + "country="+ BornCity.getCountry()+"]";
+	}
+
+	protected String getLastname() {
+		return lastname;
+	}
+
+	protected void setLastname(String lastname) {
+		this.lastname = lastname;
+	}
+
+	protected String getFirstname() {
+		return firstname;
+	}
+
+	protected void setFirstname(String firstname) {
+		this.firstname = firstname;
+	}
+
+	protected int getAge() {
+		return age;
+	}
+
+	protected void setAge(int age) {
+		this.age = age;
+	}
+
+	protected String getAddress() {
+		return address;
+	}
+
+	protected void setAddress(String address) {
+		this.address = address;
+	}
+	
+
+	
+
+	
+
+}

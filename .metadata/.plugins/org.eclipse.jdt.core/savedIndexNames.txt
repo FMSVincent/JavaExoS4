@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+C:\Users\BickelV\Desktop\Fms_formation\S4\JavaSe-worspace-POO\.metadata\.plugins\org.eclipse.jdt.core
+2412552007.index
+1865797976.index
+3097019125.index

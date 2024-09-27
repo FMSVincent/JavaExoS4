@@ -1,0 +1,37 @@
+package fr.fms.pooexo;
+
+public class TestCity {
+
+
+//	ajouter 20000 habitants a toulouse (creer une methode qui ajoute des habitants)
+	
+	public static void main(String[] args) {
+		
+		// 1.1
+		
+		City toulouse = new City ("Toulouse", "France", 101100110);
+		City paris = new City ("Paris", "France", 101110010);
+		City strasbourg = new City ("Strasbourg", "France", 101100001);
+		City lyon = new City ("Nice", "France", 101101110);
+		City marseille = new City ("Nice", "France", 101100011);
+		City avignon = new City ("Nice", "France", 101100101);
+		// 1.1 public properties
+//		System.out.println(toulouse.name, toulouse.country, toulouse.totalResident);
+//		System.out.println(paris.toString());
+//		System.out.println(strasbourg.toString());
+//		System.out.println(lyon.toString());
+//		System.out.println(marseille.toString());
+//		System.out.println(avignon.toString());
+//		
+//		toulouse.add20kResidents();
+//		System.out.println(toulouse.toString());
+//		
+		// 1.2
+		//afficher à nouveau vos villes cette fois ci via les accesseurs
+		System.out.println(toulouse.getName()+ " " + toulouse.getCountry() + " " + toulouse.getTotalResident());
+		toulouse.add20k();
+		
+		
+	}
+
+}

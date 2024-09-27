@@ -1,0 +1,12 @@
+package fr.fms.entities;
+
+import fr.fms.pooexo.City;
+
+public class Capitale extends City {
+
+	public Capitale(String name, String country, long totalResident) {
+		super(name, country, totalResident);
+		
+	}
+
+}
